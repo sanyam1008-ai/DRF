@@ -1,0 +1,19 @@
+<!-- function/templates/function/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Result</title>
+</head>
+<body>
+    <h1>Function Output</h1>
+
+    {% if result_list %}
+        {% for item in result_list %}
+            <p>{{ item }}</p>
+        {% endfor %}
+    {% else %}
+        <p>No data found.</p>
+    {% endif %}
+</body>
+</html>
